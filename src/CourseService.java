@@ -33,11 +33,19 @@ System.out.println();
     }
 
     public void displayCourseInformation(String courseId){
-        //TODO implement so it shows the course name, id and credits
+    	Course course = courses.get(courseId);
+ //   	System.out.println("Nombre del curso: " + course.getcourse);
     }
 
     public void displayStudentInformation(String studentId){
-    System.out.println(studentId);  
+    	Student student = students.get(studentId);
+        if (student != null) {
+            System.out.println("Nombre del estudiante: " + student.getName());
+            System.out.println("Id del estudiante: " + student.getId());
+            System.out.println("Cursos inscritos: " + student.getEnrolledCourses());
+        } else {
+            System.out.println("Estudiante no existe");
+        }
 }
 
 

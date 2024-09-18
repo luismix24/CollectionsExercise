@@ -37,7 +37,7 @@ public class Student
     }
 
     public void unEnroll(Course course){
-        enrolledCourses.remove( course );
+//        enrolledCourses.remove( course );
     }
 
     public int totalEnrolledCourses(){
@@ -52,7 +52,5 @@ public class Student
     public String toString(){
         return "Student{" + "name='" + name + '\'' + ", id='" + id + '\'' + ", enrolledCourses=" + enrolledCourses
             + '}';
-    }
-    public static void main(String[]args) {
-    }
+    }//toString
 }// Student
